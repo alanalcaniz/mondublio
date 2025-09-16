@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">     
+    </head>
+    <body class="bg-light d-flex flex-column min-vh-100">
+        <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+            <div class="card shadow p-4 w-100" style="max-width: 400px;">
+                <h1 class="text-center mb-4">Generación de números aleatorios</h1>
+                <main role="main" class="flex-shrink-0">
+                    <form method="POST" action="aleatoriop.jsp">
+                        <div class="mb-3">
+                            <label for="sup" class="form-label">Límite superior</label>
+                            <input type="number" class="form-control" id="sup" aria-describedby="sup" placeholder="Introduce límite superior" name="superior" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="inf" class="form-label">Límite inferior</label>
+                            <input type="number" class="form-control" id="inf" aria-describedby="inf" placeholder="Introduce límite inferior" name="inferior" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
